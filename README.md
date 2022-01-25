@@ -1,1 +1,9 @@
-# search_programming_books
+installation:
+```
+npm install or yarn
+```
+
+launching:
+```
+npm run dev or yarn run dev
+```
