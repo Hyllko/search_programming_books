@@ -4,8 +4,8 @@
 	"browserslist": "> 0.5%, last 2 versions, not dead",
 	"source": "src/index.html",
 	"scripts": {
-		"dev": "parcel --dist-dir public",
-		"build": "parcel build --dist-dir public"
+		"dev": "parcel src/index.html --dist-dir public",
+		"build": "parcel build src/index.html --dist-dir public"
 	},
 	"keywords": [],
 	"author": "",
