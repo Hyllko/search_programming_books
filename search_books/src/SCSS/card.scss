@@ -1,0 +1,84 @@
+.card {
+	text-align: center;
+	background-color: #2980b9;
+	border-radius: 0.625rem;
+	padding: 2rem 0.5rem;
+	max-width: 600px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	animation-name: scale;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	&__btn--yellow {
+		color: #f1c40f;
+		text-decoration: none;
+		border-bottom: 2px dotted #f1c40f;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		transition: color 0.2s linear;
+		&:hover {
+			color: #e67e22;
+			border: none;
+		}
+	}
+	&__header {
+		color: #f1c40f;
+		font-size: 1.875rem;
+		margin: 0;
+		&--special {
+			font-size: 1.375rem;
+			margin: 1rem 0 0 0;
+		}
+	}
+	&__img {
+		max-width: 100%;
+		height: auto;
+		filter: drop-shadow(0px 0px 0.625rem #34495e);
+	}
+	&__text {
+		font-size: 1.25rem;
+		margin: 0 auto;
+		max-width: fit-content;
+		&--danger {
+			color: #e74c3c;
+			font-size: 1.875rem;
+			padding-top: 1.25rem;
+			animation: fadeOut 2s linear;
+			animation-fill-mode: forwards;
+		}
+		&--yellow {
+			color: #f1c40f;
+		}
+		&--left {
+			text-align: left;
+			&:last-child {
+				margin-bottom: 40px;
+			}
+		}
+		&--desc {
+			margin: 0;
+			margin-bottom: 2rem;
+			padding: 0 0.5rem;
+		}
+	}
+}
+
+@keyframes fadeOut {
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(0.5);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "search_books",
+	"version": "1.0.0",
+	"browserslist": "> 0.5%, last 2 versions, not dead",
+	"source": "src/index.html",
+	"scripts": {
+		"dev": "parcel --dist-dir public",
+		"build": "parcel build --dist-dir public"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.2.1",
+		"parcel": "^2.2.1"
+	}
+}

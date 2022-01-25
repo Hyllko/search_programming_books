@@ -1,0 +1,37 @@
+.form {
+	padding-top: 2.25rem;
+	&__header {
+		color: #f1c40f;
+		margin-top: 0;
+		margin-bottom: 3.75rem;
+		text-align: center;
+	}
+	&__search,
+	&__btn {
+		border: none;
+		background: none;
+		outline: none;
+		font-size: 1rem;
+		color: #ecf0f1;
+	}
+	&__search {
+		border-bottom: 0.18rem solid #2ecc71;
+		padding-bottom: 0.25rem;
+		text-align: center;
+	}
+	&__btn {
+		cursor: pointer;
+		font-weight: bold;
+		margin-left: 0.8rem;
+		background-color: #2ecc71;
+		padding: 0.4rem 0.7rem;
+		border-radius: 0.75rem;
+		color: #2c3e50;
+		text-transform: uppercase;
+		transition: 0.2s linear;
+		&:hover {
+			background-color: #27ae60;
+			color: #ecf0f1;
+		}
+	}
+}

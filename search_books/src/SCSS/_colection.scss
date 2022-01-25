@@ -1,0 +1,33 @@
+.colection {
+	margin: 3.125rem 0;
+	ul {
+		padding-left: 1rem;
+	}
+	&__item {
+		list-style: none;
+		margin-bottom: 1rem;
+		padding-left: 1rem;
+		position: relative;
+		&::before {
+			content: "\";
+			position: absolute;
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			left: -0.8rem;
+			top: 0.4rem;
+			color: #f1c40f;
+		}
+	}
+	&__btn--yellow {
+		color: #f1c40f;
+		text-decoration: none;
+		border-bottom: 2px dotted #f1c40f;
+		font-size: 1.2rem;
+		line-height: 1.5;
+		transition: color 0.2s linear;
+		&:hover {
+			border: none;
+			color: #e67e22;
+		}
+	}
+}
